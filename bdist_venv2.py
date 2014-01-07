@@ -43,6 +43,9 @@ import virtualenv
 from distutils.log import Log
 
 
+__version__ = '0.1.3'
+
+
 class bdist_venv2(Command):
     
     description = 'create a "virtualenv" distribution'

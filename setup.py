@@ -1,3 +1,4 @@
+import re
 from setuptools import setup
 
 README = open('README.rst').read()
@@ -6,23 +7,24 @@ CHANGES = open('CHANGES.rst').read()
 
 setup(
     name='bdist-venv2',
-    version='0.1.0',
+    version=(
+        re
+        .compile(r".*__version__ = '(.*?)'", re.S)
+        .match(open('bdist_venv2.py').read())
+        .group(1)
+    ),
     url='http://github.com/bninja/bdist-venv2',
     license='BSD',
-    author='No One',
-    author_email='noone@nowhere.org',
+    author='me',
+    author_email='me@aitmp.com',
     description='Python distutils extension to create virtualenv built distributions.',
     long_description=README + '\n\n' + CHANGES,
     zip_safe=False,
     platforms='any',
     py_modules=['bdist_venv2'],
     install_requires=[
-#         'virtualenv',
+         'virtualenv',
     ],
-    extras_require={
-        'kazoo':  'kazoo >=1.3.1',
-        'newrelic': 'newrelic >=1.13.1.31',
-    },
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
