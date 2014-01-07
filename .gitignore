@@ -1,0 +1,30 @@
+*.py[co]
+*.log
+
+# packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# installer logs
+pip-log.txt
+
+# unit test / coverage reports
+.coverage
+.tox
+
+# sphnix
+docs/_build
+
+# eclipse
+.settings
+.pydevproject
+.project
+
