@@ -7,12 +7,12 @@ built distribution.
 
 It was based on what was already done by:
 
-    https://github.com/mgood/bdist_venv
+- https://github.com/mgood/bdist_venv
     
 but incorporates ideas from:
 
-    https://github.com/spotify/dh-virtualenv
-    http://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere
+- https://github.com/spotify/dh-virtualenv
+- http://lucumr.pocoo.org/2012/6/22/hate-hate-hate-everywhere
 
 Install
 -------
