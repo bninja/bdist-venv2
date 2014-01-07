@@ -2,7 +2,7 @@
 bdist-venv2
 ===========
 
-Implements a python distutils ``bdist_venv2`` command for creating a `virtualenv <https://github.com/pypa/virtualenv>` 
+Implements a python distutils ``bdist_venv2`` command for creating a `virtualenv <https://github.com/pypa/virtualenv>`_ 
 built distribution.
 
 It was based on what was already done by:
@@ -42,7 +42,7 @@ within a virtualenv). If you in one exit it:
 
     deactivate
 
-You can either create a "relocatable" virtualenv ala `bdist_venv <https://github.com/mgood/bdist_venv>`:
+You can either create a "relocatable" virtualenv ala `bdist_venv <https://github.com/mgood/bdist_venv>`_:
 
 .. code:: bash
 
@@ -55,6 +55,8 @@ or one "fixed-up" to be unpacked to a particular location:
     python setup.py bdist_venv2 -l /usr/lib/my-package -f gztar
 
 You'll find the results in ``dist`` which might look something like:
+
+.. code:: bash
 
     ls dist
     ...
