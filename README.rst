@@ -73,7 +73,7 @@ Usage
     python setup.py bdist_venv2 --help
 
     Common commands: (see '--help-commands' for more)
-
+    
       setup.py build      will build the package underneath 'build/'
       setup.py install    will install the package
     
@@ -88,10 +88,13 @@ Usage
       --bdist-dir (-b)     temporary directory for creating the distribution
       --location-dir (-l)  location where virtualenv will be installed to
                            (default: relocatable)
+      --extras (-e)        list of extras to included in the virtualenv
       --plat-name (-p)     platform name to embed in generated filenames (default:
                            linux-x86_64)
       --keep-temp (-k)     keep the installation tree around after creating the
                            distribution
+      --keep-compiled      keep compiled files in the distribution
+      --dist-name (-n)     name of the built distribution
       --dist-dir (-d)      directory to put final built distributions in
       --format (-f)        archive format to create (tar, ztar, gztar, zip)
                            (default: none)
